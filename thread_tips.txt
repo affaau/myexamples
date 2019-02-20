@@ -1,0 +1,18 @@
+There are two modules which support the usage of threads in Python:
+thread   (function like)
+and 
+threading (object orientated way)
+
+Please note: 
+    The thread module has been considered as "deprecated" for quite
+    a long time. Users have been encouraged to use the threading module instead.
+    So,in Python 3 the module "thread" is not available anymore. But that's not
+    really true: It has been renamed to "_thread" for backwards incompatibilities
+    in Python3.
+
+    The module "thread" treats a thread as a function, while the module 
+    "threading" is implemented in an object oriented way, i.e. every thread 
+    corresponds to an object.
+
+ref: https://www.python-course.eu/threads.php
+
