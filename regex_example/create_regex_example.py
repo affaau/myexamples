@@ -1,3 +1,6 @@
+'''
+ref: https://docs.python.org/3.6/library/re.html
+'''
 import re
 
 # create Regex object
@@ -267,3 +270,26 @@ agentNamesRegex = re.compile(r'Agent (\w)\w*')
 s = agentNamesRegex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
 print(s)
 #A**** told C**** that E**** knew B**** was a double agent.
+
+# re.VERBOSE mode
+#    - make regex easier to read
+#    - uses ''' ''' to create multiline string
+#    - #comment are ignored
+# instead of ...
+#
+# phoneRegex = re.compile(r'((\d{3}|\(\d{3}\))?(\s|-|\.)?\d{3}(\s|-|\.)\d{4}(\s*(ext|x|ext.)\s*\d{2,5})?)')
+#
+phoneRegex = re.compile(r'''(
+    (\d{3}|\(\d{3}\))?            # area code
+    (\s|-|\.)?                    # separator
+    \d{3}                         # first 3 digits
+    (\s|-|\.)                     # separator
+    \d{4}                         # last 4 digits
+    (\s*(ext|x|ext.)\s*\d{2,5})?  # extension
+    )''', re.VERBOSE)
+
+# regex can only accept a 2nd argument
+#    - if several flag constants are reqquired
+#    - need to combine several flag constants into one
+# example
+someRegexValue = re.compile('foo', re.IGNORECASE | re.DOTALL)
