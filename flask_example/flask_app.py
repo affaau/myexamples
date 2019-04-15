@@ -2,8 +2,12 @@
 Work with client (send_post_request.py)
 
 To run this server:
-$ set FlASK_APP = flask_app
+$ set FlASK_APP = flask_app.py
 $ flask run
+
+or
+
+$ python flask_app.py
 '''
 from flask import Flask, request
 
@@ -23,3 +27,5 @@ def hello():
     
 if __name__ == "__main__":
     app.run()
+	# you may change to specific local IP and port by
+	# app.run(host='0.0.0.0', port=80)
