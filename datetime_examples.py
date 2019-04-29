@@ -4,8 +4,8 @@ https://www.programiz.com/python-programming/datetime
 import datetime
 # common classes: date, time, datetime, timedelta
 
-# now() method 
-# to create a datetime object containing 
+# now() method
+# to create a datetime object containing
 # the current local date and time
 datetime_object = datetime.datetime.now()
 print(type(datetime_object))
@@ -13,7 +13,7 @@ print(type(datetime_object))
 print(datetime_object)
 # 2019-02-23 12:37:29.131530
 
-# today() method 
+# today() method
 # defined in the date class to get a date
 # object containing the current local date
 datetime_object = datetime.date.today()
@@ -27,8 +27,8 @@ d = datetime.date(2019, 4, 13)  # year, month, day
 print(d)
 # 2019-04-13
 
-# timestamp 
-# the number of seconds between a particular date 
+# timestamp
+# the number of seconds between a particular date
 # and January 1, 1970 at UTC
 timestamp = datetime.date.fromtimestamp(1326244364)
 print("Date =", timestamp)
@@ -94,16 +94,17 @@ print("timestamp =", b.timestamp())
 
 # timedelta class
 # tell the time difference between two dates
-t1 = datetime.date(year = 2018, month = 7, day = 12)
-t2 = datetime.date(year = 2017, month = 12, day = 23)
+t1 = datetime.date(year=2018, month=7, day=12)
+t2 = datetime.date(year=2017, month=12, day=23)
 t3 = t1 - t2
 print("t3 =", t3)
 # t3 = 201 days, 0:00:00
-print("type of t3 =", type(t3)) 
+print("type of t3 =", type(t3))
 # type of t3 = <class 'datetime.timedelta'>
 
-t4 = datetime.datetime(year = 2018, month = 7, day = 12, hour = 7, minute = 9, second = 33)
-t5 = datetime.datetime(year = 2019, month = 6, day = 10, hour = 5, minute = 55, second = 13)
+t4 = datetime.datetime(year=2018, month=7, day=12, hour=7, minute=9, second=33)
+t5 = datetime.datetime(year=2019, month=6, day=10,
+                       hour=5, minute=55, second=13)
 t6 = t4 - t5
 print("t6 =", t6)
 # t6 = -333 days, 1:14:20
@@ -119,8 +120,8 @@ print(t6.days)
 # -333
 
 # difference between two timedelta objects
-t1 = datetime.timedelta(weeks = 2, days = 5, hours = 1, seconds = 33)
-t2 = datetime.timedelta(days = 4, hours = 11, minutes = 4, seconds = 54)
+t1 = datetime.timedelta(weeks=2, days=5, hours=1, seconds=33)
+t2 = datetime.timedelta(days=4, hours=11, minutes=4, seconds=54)
 t3 = t1 - t2
 
 print("t3 =", t3)
@@ -129,8 +130,8 @@ print(t3.total_seconds())
 # 1259739.0
 
 # printing negative timedelta
-t1 = datetime.timedelta(seconds = 33)
-t2 = datetime.timedelta(seconds = 54)
+t1 = datetime.timedelta(seconds=33)
+t2 = datetime.timedelta(seconds=54)
 t3 = t1 - t2
 
 print("t3 =", t3)
@@ -142,7 +143,7 @@ print(t3.total_seconds())
 
 # strftime() method
 # configure display format
-# more format code list: https://www.programiz.com/python-programming/datetime/strftime#introduction
+# more format code list: https://www.programiz.com/python-programming/datetime/strftime
 now = datetime.datetime.now()
 
 t = now.strftime("%H:%M:%S")
@@ -177,7 +178,7 @@ local = datetime.datetime.now()
 print("Local:", local.strftime("%m/%d/%Y, %H:%M:%S"))
 # Local: 02/23/2019, 16:44:51
 
-tz_NY = pytz.timezone('America/New_York') 
+tz_NY = pytz.timezone('America/New_York')
 datetime_NY = datetime.datetime.now(tz_NY)
 print(type(datetime_NY))
 # <class 'datetime.datetime'>
