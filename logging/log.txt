@@ -1,0 +1,14 @@
+2020-05-14 09-54-50 root-DEBUG-This is a debug message
+2020-05-14 09-54-50 root-INFO-This is an info message
+2020-05-14 09-54-50 root-WARNING-This is a warning message
+2020-05-14 09-54-50 root-ERROR-This is an error message
+2020-05-14 09-54-50 root-CRITICAL-This is a critical message
+2020-05-14 09-56-13 root-WARNING-This is a warning message
+2020-05-14 09-56-13 root-ERROR-This is an error message
+2020-05-14 09-56-13 root-CRITICAL-This is a critical message
+2020-05-14 10-15-50 root-WARNING-This is a warning message
+2020-05-14 10-15-50 root-ERROR-This is an error message
+2020-05-14 10-15-50 root-CRITICAL-This is a critical message
+2020-May-14 10-23-43 root-WARNING-This is a warning message
+2020-May-14 10-23-43 root-ERROR-This is an error message
+2020-May-14 10-23-43 root-CRITICAL-This is a critical message

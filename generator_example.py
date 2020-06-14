@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import random
 
 
@@ -47,6 +46,7 @@ def collatz(n):
     while n != 1:
         n = n / 2 if n % 2 == 0 else 3 * n + 1
         yield n
+
 
 if __name__ == '__main__':
     counter = count_generator()

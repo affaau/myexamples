@@ -1,1 +1,5 @@
-֧
+pep8 function will be removed soon.
+pep8 is renamed to "pycodestyle".
+
+Usage:
+$ pycodestyle your_python_script.py

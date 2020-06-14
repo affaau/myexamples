@@ -1,0 +1,2 @@
+D:/Workspace/Visual_Studio/Projects/HelloWorld/Debug/HelloWorld.exe
+D:/Workspace/Visual_Studio/Projects/Advanced C# Tutorial for Beginners/VpApp1.2/VpApp1.2/bin/Debug/VpApp1.2.exe
